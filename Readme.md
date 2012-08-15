@@ -3,12 +3,15 @@
 ##Author:
  
 Rachel Baker
+
 rachel@rachelbaker.me
+
 @rachelbaker
  
 ##Credits:
 
 Library is based on "Simple PHP 5.3+ Bcrypt class and functions" by Marco Arment <me@marco.org>.
+
 Original Source: https://gist.github.com/1053158/
 
 ##Created: 
@@ -25,13 +28,16 @@ PHP 5.3+, Code Igniter
  
 ##Usage example:
  
-// Load library in your models or controllers
+Load library in your models or controllers
+
 `$this->load->library('bcrypt');`
 
-// In a registration or password-change form:
+In a registration or password-change form:
+
 `$hash_for_user = $this->bcrypt->hash($_POST['entered_password']);`
 
-// In a login form:
+In a login form:
+
 `$password_check = $this->bcrypt->check($_POST['entered_password'], $stored_hash_for_user);`
 
 ##License:
